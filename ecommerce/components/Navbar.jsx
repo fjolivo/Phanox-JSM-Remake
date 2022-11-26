@@ -1,9 +1,18 @@
-import React from 'react'
-import Link from 'next/link'
-;
+import React from 'react';
+import Link from 'next/link';
+import { AiOulineShopping } from 'react-icons/ai';
+
 const Navbar = () => {
   return (
-    <div>Navbar</div>
+    <div className="nacbar-container">
+      <p className="logo">
+        <Link href="/">JSM Headphones</Link>
+      </p>
+      <button type="button" className="cart-icon" onClick="">
+        <AiOulineShopping />
+        <span className="cart-item-qty">1</span>
+      </button>
+    </div>
   )
 }
 
