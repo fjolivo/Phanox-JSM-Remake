@@ -1,15 +1,15 @@
 import React from 'react';
 import Link from 'next/link';
-import { AiOulineShopping } from 'react-icons/ai';
+import { AiOutlineShopping } from 'react-icons/ai';
 
 const Navbar = () => {
   return (
-    <div className="nacbar-container">
+    <div className="navbar-container">
       <p className="logo">
         <Link href="/">JSM Headphones</Link>
       </p>
       <button type="button" className="cart-icon" onClick="">
-        <AiOulineShopping />
+        <AiOutlineShopping />
         <span className="cart-item-qty">1</span>
       </button>
     </div>
