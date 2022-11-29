@@ -1,11 +1,11 @@
 import React, { useRef } from 'react';
 import Link from 'next/link';
-import { AiOutlineMinus, AiOutlinePlus, AiOutlineLeft, AiOutlineShoppin } from 'react-icons/ai';
+import { AiOutlineMinus, AiOutlinePlus, AiOutlineLeft, AiOutlineShopping } from 'react-icons/ai';
 import {TiDeleteOutline } from 'react-icons/ti';
 import toast from 'react-hot-toast';
 
 import { useStateContext } from '../context/StateContext';
-import { uslFor } from '../lib/client';
+import { urlFor } from '../lib/client';
 
 const Cart = () => {
   const cartRef = useRef();
@@ -56,6 +56,13 @@ const Cart = () => {
                       <span className="plus" onClick=""><AiOutlinePlus /></span>
                     </p>
                   </div>
+                  <button
+                    type="button"
+                    className="remove-item"
+                    onClick=""
+                    >
+                    <TiDeleteOutline />
+                  </button>
                 </div>
               </div>
             </div>
